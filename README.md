@@ -2,6 +2,18 @@
 
 Run one or more AWS Lambda handlers locally via Express. Perfect for **local development**, **testing**, and **integration**.
 
+## 📚 DeepWiki Project Knowledge Base
+
+> **Explore the full documentation, architecture, and deep technical notes for this project on DeepWiki:**
+>
+> [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/asudbury/lambda-local-runner)
+>
+> - Comprehensive guides, diagrams, and design decisions
+> - Contributor onboarding and advanced usage tips
+> - Maintainer notes, troubleshooting, and best practices
+>
+> **This is the canonical knowledge base for the project. If you're contributing, maintaining, or deploying, start here!**
+
 ## Installation
 
 ```bash
