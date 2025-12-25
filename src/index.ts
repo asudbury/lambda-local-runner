@@ -80,11 +80,13 @@ function createLambdaHandler<TResult extends APIGatewayProxyResult>(
         path: req.path,
         httpMethod: req.method,
         body,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         headers: req.headers as any,
         isBase64Encoded: false,
         multiValueHeaders: {},
         multiValueQueryStringParameters: {},
         pathParameters: {},
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         queryStringParameters: req.query as any,
         requestContext: {
           accountId: 'local',
@@ -95,6 +97,7 @@ function createLambdaHandler<TResult extends APIGatewayProxyResult>(
           identity: {
             sourceIp: req.ip,
             userAgent: req.get('user-agent') ?? '',
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
           } as any,
           path: req.path,
           stage: 'local',
@@ -107,6 +110,7 @@ function createLambdaHandler<TResult extends APIGatewayProxyResult>(
         stageVariables: {},
       };
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const response = await handler(event, {} as any, () => {});
 
       // Type guard: only proceed if response is defined and has statusCode
@@ -182,6 +186,8 @@ export function runMultipleLambdas(options: MultiLambdaOptions) {
   });
 
   app.listen(PORT, () => {
-    console.info(`Local Lambda server running on port ${PORT} with ${options.routes.length} route(s)...`);
+    console.info(
+      `Local Lambda server running on port ${PORT} with ${options.routes.length} route(s)...`
+    );
   });
 }

@@ -1,6 +1,37 @@
+# Source files
 /node_modules
 /src
 /test
+*.test.ts
+*.spec.ts
+
+# IDE
 .vscode
+.idea
+
+# Build artifacts
 *.tsbuildinfo
+tsconfig.json
+
+# Documentation (generated)
 docs
+
+# Git
+.git
+.gitignore
+
+# Husky
+.husky
+
+# Config files
+.eslintrc.js
+eslint.config.mjs
+.prettierrc.json
+.commitlintrc.json
+
+# CI/CD
+.github
+
+# Misc
+.DS_Store
+*.log
