@@ -1,3 +1,5 @@
+<img src="./public/hero-image.png" >
+
 # lambda-local-runner
 
 Run one or more AWS Lambda handlers locally via Express. Perfect for **local development**, **testing**, and **integration**.
@@ -8,11 +10,6 @@ Run one or more AWS Lambda handlers locally via Express. Perfect for **local dev
 >
 > [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/asudbury/lambda-local-runner)
 >
-> - Comprehensive guides, diagrams, and design decisions
-> - Contributor onboarding and advanced usage tips
-> - Maintainer notes, troubleshooting, and best practices
->
-> **This is the canonical knowledge base for the project. If you're contributing, maintaining, or deploying, start here!**
 
 ## Installation
 
@@ -54,7 +51,6 @@ lambda-local-runner --single=./myLambda.ts --port=3000
 lambda-local-runner --routes=/users:./users.ts,/orders:./orders.ts --port=4000
 ```
 
-
 ### Run via npm script (in this repo only)
 You can also run the CLI using the npm script provided in this repository:
 
@@ -73,7 +69,6 @@ If you install lambda-local-runner as a dependency in another project, you can:
 
 - Use `npx lambda-local-runner ...` to run the CLI
 - Or add your own npm script in your project's `package.json` that calls `lambda-local-runner`
-
 
 ---
 
@@ -127,8 +122,6 @@ aws_access_key_id = YOUR_ACCESS_KEY
 aws_secret_access_key = YOUR_SECRET_KEY
 region = us-east-1
 ```
-
-
 
 ## 📚 Documentation
 
